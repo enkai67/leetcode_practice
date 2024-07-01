@@ -15,7 +15,7 @@ var gcdOfStrings = function (str1, str2) {
     const divider = (x, y) => y === 0 ? x : divider(y, x % y);
     let divLength = divider(i, j);
     
-    return str1.slice(0, divLength);
+    return str1.substring(0, divLength);
 };
 
 console.log(gcdOfStrings(str1, str2));
